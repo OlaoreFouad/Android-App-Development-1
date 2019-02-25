@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Meters To Inches App</string>
+    <string name="error_message">Text field is empty!, fill it!</string>
+</resources>

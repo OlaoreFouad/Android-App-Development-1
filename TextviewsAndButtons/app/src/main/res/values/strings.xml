@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Textviews And Buttons</string>
+    <string name="button_name">Toggle text</string>
+    <string name="text">Hello, world!</string>
+</resources>

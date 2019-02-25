@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Radio Buttons</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others. Please specify</string>
+    <string name="attending">Attending?</string>
+</resources>
