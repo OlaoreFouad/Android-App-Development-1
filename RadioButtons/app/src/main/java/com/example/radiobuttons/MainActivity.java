@@ -2,6 +2,7 @@ package com.example.radiobuttons;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -10,37 +11,39 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button send_btn;
+//    Radio Buttons
     private RadioGroup radioGroup;
+    private RadioButton radioButton;
 
-    private RadioButton male, female, others;
+    private String TAG = "RD";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
-//        Widget Ids
-        send_btn = findViewById(R.id.sendButton);
         radioGroup = findViewById(R.id.radioGroupId);
-        male = findViewById(R.id.maleId);
-        female = findViewById(R.id.femaleId);
-        others = findViewById(R.id.othersId);
-
-        send_btn.setOnClickListener(new View.OnClickListener() {
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onClick(View v) {
-                if (male.isChecked()) {
-                    showToast("Male is selected!");
-                } else if(female.isChecked()) {
-                    showToast("Female is selected!");
-                } else if (others.isChecked()) {
-                    showToast("Others is selected!");
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                radioButton = findViewById(checkedId);
+
+                switch (radioButton.getId()) {
+                    case R.id.maleId: {
+                        Log.d(TAG, "onCheckedChanged: Male is selected!");
+                    }
+                    break;
+                    case R.id.femaleId: {
+                        Log.d(TAG, "onCheckedChanged: Female is selected!");
+                    }
+                    break;
+                    case R.id.othersId: {
+                        Log.d(TAG, "onCheckedChanged: Others is selected!");
+                    }
+                    break;
                 }
             }
         });
-    }
-
-    public void showToast(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }
