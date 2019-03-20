@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CheckBoxes</string>
+    <string name="favorite">Who\'s your favorite person!</string>
+    <string name="mom">Mom</string>
+    <string name="dad">Dad</string>
+    <string name="show">Show</string>
+    <string name="grandparents">Grandparents</string>
+</resources>

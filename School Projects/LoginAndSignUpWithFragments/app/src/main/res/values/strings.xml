@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Login And SignUp With Fragments</string>
+    <string name="enter_your_login_credentials">Enter your Login Credentials</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_text_id">Login</string>
+    <string name="login">Login</string>
+    <string name="dont_have_an_account_sign_up">Dont have an account? Sign up.</string>
+    <string name="sign_up">Sign up!</string>
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="signup">Signup</string>
+    <string name="login_and_signup_fragments_app">Login and Signup Fragments App.</string>
+</resources>

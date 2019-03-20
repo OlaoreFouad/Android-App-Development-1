@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Bottom Navigation Project One</string>
+    <string name="welcome_brother">Welcome Brother!</string>
+    <string name="hey_thanks_for_coming_back">Hey, thanks for coming back</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account, Sign Up</string>
+    <string name="signup">Thanks for wanting to sign up</string>
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="sign_up">Signup</string>
+    <string name="login_text_in">Already have an account, Log in</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="profile">Profile</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="olaore_fouad">Olaore Fouad</string>
+    <string name="select_color">Select Color</string>
+    <string name="colors">Colors</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+</resources>
