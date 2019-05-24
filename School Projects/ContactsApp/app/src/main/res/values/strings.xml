@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Contacts App</string>
+    <string name="search">Search</string>
+    <string name="my_profile">My Profile</string>
+    <string name="share_your_profile_and_view_images_from_your_contacts">Share your profile and view images from your contacts!</string>
+    <string name="share_profile_text">Share Profile</string>
+    <string name="contacts">Contacts</string>
+    <string name="call">Call</string>
+    <string name="message">Message</string>
+    <string name="video_call">Video call</string>
+    <string name="details">Details</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="device">Device</string>
+    <string name="org">Organization</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="groups">Groups</string>
+    <string name="more">More</string>
+    <string name="address">Address</string>
+    <string name="select">Select Groups</string>
+    <string name="not_assigned">Not assigned</string>
+</resources>

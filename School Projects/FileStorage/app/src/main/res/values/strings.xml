@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">File Storage Project One</string>
+    <string name="add_student">Add Student</string>
+    <string name="student_name">Name</string>
+    <string name="student_score">Score</string>
+    <string name="add">Add</string>
+    <string name="view_students">View Students</string>
+</resources>

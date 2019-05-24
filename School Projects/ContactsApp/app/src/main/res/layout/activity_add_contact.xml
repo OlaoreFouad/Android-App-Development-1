@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContactActivity">
+
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/cancelButtonId"
+        style="@style/AddContactTopButtons"
+        android:text="@string/cancel"/>
+
+    <Button
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/saveButtonId"
+        style="@style/AddContactTopButtons"
+        android:text="@string/save"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/myLine3"
+        app:layout_constraintTop_toBottomOf="@id/cancelButtonId"
+        android:background="@drawable/line"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/device"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:id="@+id/deviceText"
+        android:textColor="@color/colorText"
+        app:layout_constraintTop_toBottomOf="@id/myLine3"
+        android:padding="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/myLine4"
+        app:layout_constraintTop_toBottomOf="@id/deviceText"
+        android:background="@drawable/line"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="30dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/camera"
+        android:background="@drawable/camera_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myLine4"
+        android:layout_marginTop="20dp"
+        android:id="@+id/addContactImageId"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/addContactImageId"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myLine4"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="50dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/addContactNameId"
+        android:layout_marginTop="10dp"
+        android:hint="@string/name"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/arrow_down"
+        android:id="@+id/downArrowId"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/addContactNameId"
+        app:layout_constraintTop_toBottomOf="@id/myLine4"
+        android:layout_marginTop="18dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/addContactImageId"
+        android:hint="@string/org"
+        android:id="@+id/addContactOrgId"
+        android:paddingBottom="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addContactNameId"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="50dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addContactPhoneNumberId"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="60dp"
+        android:paddingBottom="15dp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/addContactImageId"
+        android:layout_marginTop="20dp"
+        android:hint="@string/phone_number"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addContactEmailId"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingBottom="15dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintTop_toBottomOf="@id/addContactOrgId"
+        android:layout_marginTop="100dp"
+        android:hint="@string/email"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingBottom="15dp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintTop_toBottomOf="@id/addContactEmailId"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/addContactGroupsId"
+        android:text="@string/groups"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_assigned"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        android:id="@+id/addContactGroupsTextId"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/addContactGroupsId"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/addContactEmailId"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/addContactAddressId"
+        android:hint="@string/address"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@id/addContactGroupsId"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        />
+
+</android.support.constraint.ConstraintLayout>

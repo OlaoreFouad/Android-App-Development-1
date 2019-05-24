@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SongActivity">
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="170dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/songImage"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="30dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/songImage"
+        android:background="@color/colorPrimary"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song Name"
+        android:id="@+id/songName"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song Artist"
+        android:id="@+id/songArtist"
+        app:layout_constraintTop_toBottomOf="@id/songName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/songSeekbar"
+        app:layout_constraintTop_toBottomOf="@id/songArtist"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:00"
+        android:id="@+id/startTimer"
+        app:layout_constraintTop_toBottomOf="@id/songSeekbar"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4:00"
+        android:id="@+id/endTimer"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/songSeekbar"
+        android:layout_marginEnd="4dp"
+        android:textSize="18sp"/>
+
+    <TableRow
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        android:padding="15dp"
+        android:layout_width="wrap_content">
+
+        <Button
+            android:background="@android:drawable/ic_media_previous"
+            android:layout_width="80dp"
+            android:id="@+id/prevButtonId"
+            />
+
+        <Button
+            android:background="@android:drawable/ic_media_play"
+            android:layout_width="80dp"
+            android:id="@+id/playButtonId"
+            />
+
+        <Button
+            android:background="@android:drawable/ic_media_next"
+            android:layout_width="80dp"
+            android:id="@+id/nextButtonId"
+            />
+
+    </TableRow>
+
+</android.support.constraint.ConstraintLayout>

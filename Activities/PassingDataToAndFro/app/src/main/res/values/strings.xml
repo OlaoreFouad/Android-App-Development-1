@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Passing Data to and fro</string>
+    <string name="data_for_second_activity">Data for second activity</string>
+    <string name="go">Go!</string>
+    <string name="data_for_first_activity">Data for first activity</string>
+    <string name="no_text_yet">No text yet!</string>
+    <string name="back">Back</string>
+</resources>

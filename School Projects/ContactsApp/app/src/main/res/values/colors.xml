@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F58A42</color>
+    <color name="colorAccent">#F58A42</color>
+    <color name="colorLightGray">#F5F5F5</color>
+    <color name="colorSearchHint">#B3B3B3</color>
+    <color name="colorContactAvatar">#DDDDDD</color>
+    <color name="colorText">#494949</color>
+    <color name="colorStarred">#F6A51D</color>
+    <color name="colorPlusSign">#38BF21</color>
+    <color name="colorSearchBorder">#E9E9E9</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorContactHeadings">#A4A4A4</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorAccordionBg">#F6F6F6</color>
+</resources>

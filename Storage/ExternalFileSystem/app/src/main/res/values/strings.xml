@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">External File System</string>
+    <string name="first_text">First Text</string>
+    <string name="new_file">New File</string>
+    <string name="read_file">Read File</string>
+    <string name="write_file">Write File</string>
+    <string name="list_files">List Files</string>
+    <string name="file_name_text">File name</string>
+    <string name="enter_file_name_text">Enter file name</string>
+</resources>
